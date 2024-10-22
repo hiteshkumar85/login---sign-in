@@ -3,9 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>login & sign_in</title>
+    <title>login page</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
-<body>
-    <h1>hitesh kumar</h1>
+<body> 
+    <div class="sign_in move">
+        <h1>sign in</h1>
+        <div class="input_container">
+            <input type="text" placeholder="username" required>
+            <i class='bx bxs-user'></i>
+        </div>
+        <div class="input_container">
+            <input type="email" placeholder="email" required>
+            <i class='bx bxs-envelope'></i>
+        </div>
+        <div class="input_container">
+            <input type="Password" placeholder="create password" required>
+            <i class='bx bxs-lock-alt'></i>
+        </div>
+        <button type="submit" class="btn">Sign in</button>
+        <div class="register-link">
+               <p>Don't have an account? <a href="#" onclick="move_login()">login</a></p>
+        </div>
+    </div>
+    <div class="log_in">
+        <h1>login</h1>
+        <div class="input_container">
+            <input type="text" placeholder="username" required>
+            <i class='bx bxs-user'></i>
+        </div>
+        <div class="input_container">
+            <input type="Password" placeholder="password" required>
+            <i class='bx bxs-lock-alt'></i>
+        </div>
+        <div class="re-check-box">
+            <label class=" re"> <input type="checkbox">Remember me</label>
+            <a href="#">Forgot password</a>
+        </div>
+        <button type="submit" class="btn">Login</button>
+        <div class="register-link">
+               <p>Don't have an account? <a href="#" onclick="move_sign()">Sign in</a></p>
+        </div>
+    </div>
 </body>
+<script src="main.js"></script>
 </html>
