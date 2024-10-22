@@ -24,9 +24,10 @@ body{
     background: rgba(0, 0, 0, 0.575);
     user-select: none;
     position: absolute;
+    transition: .8s;
 }
 .log_in.move{
-    transform: translateX(200%) ;
+    transform: translateX(300%) rotate(15deg);
 }
 h1{
     font-size: 36px;
@@ -93,7 +94,7 @@ margin: 30px 0;
     outline: none;
     border-radius: 50px;
     cursor: pointer;
-    font-size: 18px;
+    font-size: 19px;
     font-weight: 600;
     color: #000;
     margin-left: 5%;
@@ -103,18 +104,18 @@ margin: 30px 0;
     text-align: center;
     margin: 20px;
  }
- .register-link  a{
+ .register-link span{
     color: #fff;
     text-decoration: none; 
     font-weight:550;
-    font-size: 17px;
+    font-size: 18px;
  }
-.register-link p a:hover{
+.register-link p span:hover{
     cursor: pointer;
     color: green;
 }
 
-.sign_in.move{
+.sign_in{
     height: 70vh;
     width: 400px;
     border-radius: 10px;
@@ -123,6 +124,9 @@ margin: 30px 0;
     background: rgba(0, 0, 0, 0.575);
     user-select: none;
     position: absolute;
+    transition: .8s;
 } 
-
+.sign_in.move{
+    transform: translateX(-300%) rotate(15deg);
+}
 
